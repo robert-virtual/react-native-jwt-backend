@@ -10,6 +10,7 @@ app.use(express.json());
 
 // rutas
 app.use("/auth", require("./routes/auth"));
+app.use("/posts", require("./routes/posts"));
 
 app.listen(port, () => {
   console.log("aplicacion ejecutandose en el puerto: ", port);
